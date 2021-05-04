@@ -2,12 +2,19 @@ import React from 'react';
 import styled from 'styled-components';
 import logo from '../images/logo.png';
 
-const StyledHeader = styled.header`
+const HeaderWrapper = styled.header`
+	background: transparent;
+	position: fixed;
+	left: 25%;
+	width: 60%;
+	margin: 0 auto;
+`;
+
+const StyledHeader = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 60%;
-	margin: 0 auto;
+	width: 100%;
 `;
 
 const StyledNav = styled.nav`
@@ -19,22 +26,26 @@ const StyledNav = styled.nav`
 
 			font-size: 10px;
 			font-style: italic;
-			border-bottom: 1px solid black;
+			font-weight: bold;
+			border-bottom: 2px solid white;
+			color: white;
 		}
 	}
 `;
 
 const Header = () => {
 	return (
-		<StyledHeader>
-			<img src={logo} alt='logo' />
-			<StyledNav>
-				<ul>
-					<li>01. HISTORY</li>
-					<li>02. TEAM</li>
-				</ul>
-			</StyledNav>
-		</StyledHeader>
+		<HeaderWrapper>
+			<StyledHeader>
+				<img src={logo} alt='logo' />
+				<StyledNav>
+					<ul>
+						<li>01. HISTORY</li>
+						<li>02. TEAM</li>
+					</ul>
+				</StyledNav>
+			</StyledHeader>
+		</HeaderWrapper>
 	);
 };
 
