@@ -5,7 +5,7 @@ import logo from '../images/logo.png';
 const HeaderWrapper = styled.header`
 	background: transparent;
 	position: fixed;
-	left: 25%;
+	left: 20%;
 	width: 60%;
 	margin: 0 auto;
 `;
@@ -22,13 +22,16 @@ const StyledNav = styled.nav`
 		li {
 			list-style: none;
 			display: inline;
-			margin-right: 40px;
 
 			font-size: 10px;
 			font-style: italic;
 			font-weight: bold;
 			border-bottom: 2px solid white;
 			color: white;
+		}
+
+		li:first-child {
+			margin-right: 40px;
 		}
 	}
 `;

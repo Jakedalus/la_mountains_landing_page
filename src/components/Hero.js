@@ -6,7 +6,6 @@ const StyledDiv = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 700px;
 	background-image: url(${heroImage});
 	background-size: cover;
 	background-repeat: no-repeat;
