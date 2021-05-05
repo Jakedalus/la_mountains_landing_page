@@ -87,7 +87,7 @@ const History = () => {
 		slidesToScroll : 1
 	};
 	return (
-		<StyledSection>
+		<StyledSection id='history'>
 			<WrapperDiv>
 				<Title>
 					<h2>

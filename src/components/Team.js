@@ -138,7 +138,7 @@ const Team = () => {
 	};
 
 	return (
-		<StyledSection>
+		<StyledSection id='team'>
 			<Container>
 				<Title>
 					<h2>

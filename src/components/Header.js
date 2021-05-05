@@ -2,12 +2,21 @@ import React from 'react';
 import styled from 'styled-components';
 import logo from '../images/logo.png';
 
-const HeaderWrapper = styled.header`
-	background: transparent;
+const HeaderBackground = styled.header`
+	background-color: transparent;
 	position: fixed;
+	height: 55px;
+	width: 100%;
+`;
+
+const HeaderWrapper = styled.div`
 	left: 20%;
 	width: 60%;
 	margin: 0 auto;
+
+	a {
+		color: white;
+	}
 `;
 
 const StyledHeader = styled.div`
@@ -38,17 +47,23 @@ const StyledNav = styled.nav`
 
 const Header = () => {
 	return (
-		<HeaderWrapper>
-			<StyledHeader>
-				<img src={logo} alt='logo' />
-				<StyledNav>
-					<ul>
-						<li>01. HISTORY</li>
-						<li>02. TEAM</li>
-					</ul>
-				</StyledNav>
-			</StyledHeader>
-		</HeaderWrapper>
+		<HeaderBackground>
+			<HeaderWrapper>
+				<StyledHeader>
+					<img src={logo} alt='logo' />
+					<StyledNav>
+						<ul>
+							<li>
+								<a href='#history'>01. HISTORY</a>
+							</li>
+							<li>
+								<a href='#team'>02. TEAM</a>
+							</li>
+						</ul>
+					</StyledNav>
+				</StyledHeader>
+			</HeaderWrapper>
+		</HeaderBackground>
 	);
 };
 
