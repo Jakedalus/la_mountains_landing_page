@@ -16,6 +16,7 @@ const StyledSection = styled.section`
 
 		.number {
 			font-size: 100px;
+			color: #b0b4be;
 		}
 
 		.title {
@@ -25,13 +26,6 @@ const StyledSection = styled.section`
 			font-size: 20px;
 		}
 	}
-`;
-
-const WrapperDiv = styled.div`
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	width: 60%;
 `;
 
 const Title = styled.div`
@@ -48,7 +42,7 @@ const Title = styled.div`
 
 const Container = styled.div`background-color: white;`;
 
-const Header = styled.div`background-color: blue;`;
+const Header = styled.div`background-color: #414f6b;`;
 
 const Tabs = styled.div`
 	display: flex;
@@ -62,20 +56,21 @@ const Tabs = styled.div`
 		align-items: center;
 		cursor: pointer;
 
-		background-color: gray;
+		color: #b0b4be; // gray
+		background-color: #414f6b; // blue
 		height: 100%;
 		padding: 0 10px;
 
 		span {
-			border-bottom: 2px solid black;
+			border-bottom: 2px solid #414f6b;
 		}
 	}
 
 	div.active {
-		background-color: red;
-		color: gray;
+		background-color: #b0b4be;
+		color: #414f6b;
 		span {
-			border-bottom: 2px solid gray;
+			border-bottom: 2px solid #414f6b;
 		}
 	}
 `;
@@ -180,24 +175,26 @@ const Team = () => {
 						<Schedule>
 							<h3>Schedule</h3>
 							<table>
-								<tr>
-									<td>25 Nov 2016</td>
-									<td>Vestibulum viverra</td>
-								</tr>
-								<tr className='space'>
-									<td>28 Nov 2016</td>
-									<td>Vestibulum viverra</td>
-								</tr>
+								<tbody>
+									<tr>
+										<td>25 Nov 2016</td>
+										<td>Vestibulum viverra</td>
+									</tr>
+									<tr className='space'>
+										<td>28 Nov 2016</td>
+										<td>Vestibulum viverra</td>
+									</tr>
 
-								<tr className='space'>
-									<td>18 Dec 2016</td>
-									<td>Vestibulum viverra</td>
-								</tr>
+									<tr className='space'>
+										<td>18 Dec 2016</td>
+										<td>Vestibulum viverra</td>
+									</tr>
 
-								<tr>
-									<td>7 Jan 2017</td>
-									<td>Vestibulum viverra</td>
-								</tr>
+									<tr>
+										<td>7 Jan 2017</td>
+										<td>Vestibulum viverra</td>
+									</tr>
+								</tbody>
 							</table>
 						</Schedule>
 					</MountainContainer>
@@ -209,24 +206,26 @@ const Team = () => {
 						<Schedule>
 							<h3>Schedule</h3>
 							<table>
-								<tr className='space'>
-									<td>17 Nov 2016</td>
-									<td>Vestibulum viverra</td>
-								</tr>
+								<tbody>
+									<tr className='space'>
+										<td>17 Nov 2016</td>
+										<td>Vestibulum viverra</td>
+									</tr>
 
-								<tr>
-									<td>13 Dec 2016</td>
-									<td>Vestibulum viverra</td>
-								</tr>
-								<tr className='space'>
-									<td>28 Dec 2016</td>
-									<td>Vestibulum viverra</td>
-								</tr>
+									<tr>
+										<td>13 Dec 2016</td>
+										<td>Vestibulum viverra</td>
+									</tr>
+									<tr className='space'>
+										<td>28 Dec 2016</td>
+										<td>Vestibulum viverra</td>
+									</tr>
 
-								<tr>
-									<td>9 Feb 2017</td>
-									<td>Vestibulum viverra</td>
-								</tr>
+									<tr>
+										<td>9 Feb 2017</td>
+										<td>Vestibulum viverra</td>
+									</tr>
+								</tbody>
 							</table>
 						</Schedule>
 					</MountainContainer>

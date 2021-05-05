@@ -15,7 +15,16 @@ const StyledDiv = styled.div`
 		display: flex;
 		flex-direction: column;
 		font-size: 100px;
+		font-family: 'PT Sans Narrow', sans-serif;
 		width: 60%;
+
+		span:first-child {
+			color: #4d4d4d;
+		}
+
+		span:last-child {
+			color: #414f6b;
+		}
 	}
 `;
 
